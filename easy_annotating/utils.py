@@ -37,7 +37,6 @@ class Configurations:
             segment_len=30,
             use_subtracting=True,
             language='ru',
-            type_representation='words',
             no_speech_threshold=0.2
     ):
         # Directories, files and paths:
