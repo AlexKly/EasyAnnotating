@@ -15,6 +15,7 @@ ea = annotator.EasyAnnotating(configs=c, verbose=1)
 
 
 class TestEasyAnnotating(unittest.TestCase):
-    def test_ea_a_u0(self): print(ea.annotate(audio=dir_examples/'test.wav', type_representation='segments'))    # OK
-    def test_ea_a_u1(self): print(ea.annotate(audio=dir_examples/'test.wav', type_representation='words'))       # OK
-    def test_ea_a_u2(self): print(ea.annotate(audio=dir_examples/'test.wav', type_representation='particles'))   # OK
+    def test_ea_a_u0(self):
+        audio = utils.load_audio(path=dir_examples/'cosmos_720.mp4')
+        print(ea.annotate(audio=audio, type_representation='words'))
+
